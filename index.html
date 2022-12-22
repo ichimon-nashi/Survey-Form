@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Registration Form</h1>
+  <p id="description">Register now for a chance to win a brand new PS5!</p>
+
+  <form id="survey-form" method="post" action='https://registration_page.html'>
+    <fieldset>
+      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+      <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+      <label id="number-label" for="number">Age: <input id="number" type="number" min="18" max="120" placeholder="Enter your age"></label>
+    </fieldset>
+
+  <fieldset>
+    <label name="game-console" for="game-console">Which consoles do you own:
+      <input id="ps5" value="ps5" name="game-console" type="checkbox">PS5
+      <input id="ps4"  value="ps4" name="game-console" type="checkbox">PS4
+      <input id="xbox"  value="xbox" name="game-console" type="checkbox">Xbox
+      <input id="switch"  value="switch" name="game-console"  type="checkbox">Switch
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label for="dropdown">Which game are you most hyped for?
+    <select id="dropdown" name="dropdown">
+      <option value="">(Select one...)</option>
+      <option value="1">God of War:Ragnarok</option>
+      <option value="2">Elden Ring</option>
+      <option value="3">Horizon Forbidden West</option>
+      <option value="4">Other</option>
+    </select>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label name="newsletter" for="newsletter">Do you wish to receive our newsletter:
+      <label for="yes-newsletter"><input name="newsletter" value="yes-newsletter" id="yes-newsletter" type="radio" class="inline">Yes</label>
+      <label for="no-newsletter"><input name="newsletter" value="no-newsletter" id="no-newsletter" class="inline" type="radio">No</label>
+    </label>
+
+  <br>
+    <label for="comment">What kind of news are you interested in:
+      <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Your opinions matter..."></textarea>
+  </fieldset>
+
+
+  <input id="submit" type="submit" value="Submit">
+
+  </form>
+</body>
+</html>
